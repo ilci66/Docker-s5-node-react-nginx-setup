@@ -1,0 +1,28 @@
+version : '3'
+
+networks:
+  nginx-php74-mysql8-node:
+
+services:
+
+  # nginx
+  nginx-service:
+    image: nginx:stable-alpine
+    container_name: nginx-container
+    ports:
+      - "8080:80"
+    networks:
+      - nginx-php74-mysql8-node
+
+  # CONTINUE AFTER YOUR BREAK
+
+  # php
+  php74-service:
+
+
+  # mysq
+  mysql8-service:
+
+
+  # node
+  node-service:
