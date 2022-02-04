@@ -5,7 +5,7 @@ mysql/*
 !mysql/.gitkeep 
 
 
-# Created by https://www.toptal.com/developers/gitignore/api/symfony
+# Created by https://www.toptal.com/developers/gitignore/api/symfony;
 # Edit at https://www.toptal.com/developers/gitignore?templates=symfony
 
 ### Symfony ###
