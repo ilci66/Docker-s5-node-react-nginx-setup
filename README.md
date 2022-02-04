@@ -13,4 +13,6 @@ Project setup will be handled in docker with the docker compose file
 *   Node
 
 ### Project Motivation
-I need more practice using tools such as docker. I haven't done a project with symfny that utilizes react for frontend.
+I need more practice using tools such as docker. I haven't done a project with symfony that utilizes react for frontend.
+
+Full tutorial is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
