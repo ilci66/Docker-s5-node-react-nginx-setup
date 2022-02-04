@@ -1,5 +1,8 @@
+# exclude everything
 mysql/*
-# !/mysql
+
+# exception to the rule
+!mysql/.gitkeep 
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/symfony
