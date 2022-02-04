@@ -1,5 +1,5 @@
-/mysql/*
-!/mysql
+mysql/*
+# !/mysql
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/symfony
