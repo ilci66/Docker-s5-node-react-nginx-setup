@@ -15,4 +15,11 @@ Project setup will be handled in docker with the docker compose file
 ### Project Motivation
 I need more practice using tools such as docker. I haven't done a project with symfony that utilizes react for frontend.
 
+### How To Use
+*   Clone the repository
+*   Create a "mysql" folder in the root
+*   run "docker-compose up -d --build" 
+*   go to "https://localhost:8080" to view index.php
+
+### Notes
 Full tutorial is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)

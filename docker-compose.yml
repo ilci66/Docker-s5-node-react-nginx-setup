@@ -22,6 +22,7 @@ services:
 
     # php
     php74-service:
+        # gonna build it using the dockerfile in php directory
         build:
             context: .
             dockerfile: ./php/Dockerfile
