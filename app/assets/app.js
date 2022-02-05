@@ -10,3 +10,8 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+import Home from './components/Home';
+
+window.addEventListener('click', () => console.log(Home))
+
+ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));

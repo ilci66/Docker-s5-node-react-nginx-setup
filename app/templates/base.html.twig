@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
     </head>
     </body>
-        <div class="root">This be da root!</div>
+        <div id="root"></div>
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
     </body>
 </html>
