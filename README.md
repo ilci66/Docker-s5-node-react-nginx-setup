@@ -25,4 +25,4 @@ I need more practice using tools such as docker. I haven't done a project with s
 Full tutorial is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
 
 ### Currently working on
-Working on adding react for the front end.
+Directly entering the url of the /detail breaks the app while going to the same url wusing the link works just fine, gonna find out why next.
