@@ -19,10 +19,13 @@ I need more practice using tools such as docker. I haven't done a project with s
 *   Clone the repository
 *   Create a "mysql" folder in the root
 *   run "docker-compose up -d --build" 
+*   inside the node-service container run "yarn install"
 *   go to "https://localhost:8080" to view index.php
 
+
 ### Notes
-Full tutorial is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
+Full tutorial for the setup is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
 
 ### Currently working on
-Directly entering the url of the /detail breaks the app while going to the same url wusing the link works just fine, gonna find out why next.
+Need to do some reading on how to work with data in symfony and database connection.
+I want to save my To do list to the database I have established and maybe delete some after doing the activities I planned to do
