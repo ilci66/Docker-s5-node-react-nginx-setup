@@ -11,7 +11,7 @@ function Home() {
         e.preventDefault();
 
         console.log(name, duration)
-        data = { name, duration }
+        const data = { name, duration }
         axios.post('http://localhost:8080/add', data)
             .then(res => console.log(res.data))
             .catch(error => console.log("error ==>", error))

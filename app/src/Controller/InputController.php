@@ -10,8 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 class InputController extends AbstractController
 {   
-    
-    
     /**
      * @Route("/get-all", name="get_all", methods="GET")
      */
@@ -33,23 +31,21 @@ class InputController extends AbstractController
     // gonna handle database connection decoding and saving to to database
     public function save(): Response
     {   
-        echo "stuff";
-        print("asdasd");
+        // echo "stuff";
+        // print("asdasd");
         $request = Request::createFromGlobals();
         // $request->request->get('name');
         // $request->request->get('duration');
         // print( $name . $duration);
         
-        $parameters = json_decode($request->getContent(), true);
+        $parameters = json_decode($request->getContent(), false);
         // $name =  $parameters['name']; // will print 'user'
         // $duration = $parameters['duration'];
         // isset($this->$parameters);
-        print("parameters" . $parameters);
+        print("parameters ==> " . json_decode($request->getContent(), true));
         
         
         // now save them in the database
-
-
 
     
         // send response 
