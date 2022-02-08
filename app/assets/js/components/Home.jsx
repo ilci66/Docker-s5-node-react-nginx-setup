@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import AllItems from './AllItems';
+import axios from 'axios';
 
 function Home() {
 
@@ -11,15 +12,14 @@ function Home() {
 
         console.log(name, duration)
         data = { name, duration }
-        axios.post('http://localhost:8080/input', data)
+        axios.post('http://localhost:8080/add', data)
             .then(res => console.log(res.data))
             .catch(error => console.log("error ==>", error))
         
     }   
 
     return (<div className='center-align homepage-container'>
-    <h1>Home Page</h1>
-    <h2>To Do List</h2>
+    <h1>To Do List</h1>
     <div className='center-align'>
 
         <form className='form' onSubmit={(e) => submitActivity(e)}>
@@ -39,10 +39,10 @@ function Home() {
             name='duration'
             id="a-duration"
             />
-            <input type="submit" value="ADD" />
+            <input className='waves-effect waves-light btn' type="submit" value="ADD" />
         </form>
     </div>
-    
+    <AllItems />
     </div>);
 }
 

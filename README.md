@@ -29,3 +29,4 @@ Full tutorial for the setup is [here](https://www.youtube.com/watch?v=ITOnpzkzlY
 ### Currently working on
 Need to do some reading on how to work with data in symfony and database connection.
 I want to save my To do list to the database I have established and maybe delete some after doing the activities I planned to do
+Trying to understand how to use symfony requests and responses, reading, testing...
