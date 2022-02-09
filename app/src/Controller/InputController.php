@@ -21,8 +21,6 @@ class InputController extends AbstractController
         );
         return new JsonResponse($values);
 
-    
-
     }
     /**
      * @Route("/add", name="add", methods="POST")
@@ -31,24 +29,23 @@ class InputController extends AbstractController
     // gonna handle database connection decoding and saving to to database
     public function save(): Response
     {   
-        // echo "stuff";
-        // print("asdasd");
         $request = Request::createFromGlobals();
-        // $request->request->get('name');
-        // $request->request->get('duration');
-        // print( $name . $duration);
         
-        $parameters = json_decode($request->getContent(), false);
+        // $parameters = json_decode($request->getContent(), false);
         // $name =  $parameters['name']; // will print 'user'
         // $duration = $parameters['duration'];
         // isset($this->$parameters);
-        print("parameters ==> " . json_decode($request->getContent(), true));
+
+        // print("parameters ==> " . $request->getContent());
         
+        // apparently I didn't need to deserialize
+        print($request->request->get('name')); // this one says they cant 
+        print($request->request->get('duration')); // this one says they cant 
         
         // now save them in the database
 
     
-        // send response 
+        // and finally send response 
         $response = new Response();
         $response->setStatusCode(Response::HTTP_OK);
 
