@@ -12,6 +12,7 @@ const AllItems = () => {
             .catch(e => console.log("error in get all ==>", e))
     },[])
     return (<>
+        {!allActivities && <p>Loading Activities</p>}
         <ul className="collection">
             {allActivities !== undefined && allActivities.map(activity => {
                 return <li key={activity[0]} className="collection-item">{activity[0]}, {activity[1]}</li>
