@@ -26,3 +26,8 @@ form{
     max-width: 50%;
     margin: 20px auto;
 }
+.collection-item {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
