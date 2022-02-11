@@ -74,7 +74,7 @@ class InputController extends AbstractController
         // $activity->setName($a_name);
         // $activity->setDuration($a_duration);
 
-        // $entityManager->persist($activity);
+        // $entityManager->persist($activity);   
         // $entityManager->flush();
 
 
@@ -88,10 +88,26 @@ class InputController extends AbstractController
         // return new Response('Saved new activity with the id' . $activity->getId());
 
         // OK NOW GETTING THE INFO NOW TO WORK WITH IT AFTER ME BREAK
-        $data = $request->getContent();
-        $data = json_decode($data, true);
-    
-        return $this->json($data);
+        // $data = $request->getContent();
+        // print(var_dump($data));
+        // // $data = json_decode($data, true);
+        // $data = json_decode($data);
+        // // $a_name = $data->{'name'}; // this one says they cant 
+        // // print(var_dump(($data)));
+        // // return $this->json($data);
+        // return $this->json($data)->{"name"};
+
+        $name = $request->get('name');
+        $duration = $request->get('duration');
+        $entityManager = $doctrine->getManager();
+        $activity = new Activity();
+        
+        $activity->setName($name);
+        $activity->setDuration($duration);
+        
+        $entityManager->persist($activity);   
+        $entityManager->flush();
+        return new Response('Saved new activity'. $name. $duration. "with the id ==>" . $activity->getId());
     }
 
     /**

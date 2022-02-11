@@ -27,8 +27,4 @@ I need more practice using tools such as docker. I haven't done a project with s
 Full tutorial for the setup is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
 
 ### Currently working on
-Need to do some reading on how to work with data in symfony and database connection.
-I want to save my To do list to the database I have established and maybe delete some after doing the activities I planned to do
-While testing with postman all the requests and responses work as they should but getting all types of errors from react frontend, working on it ...
-Apparently the data sent from the frontend somehow doesn't reach the symfony backend
-Getting the info now, gonna save it to the database after my break
+Saving data to the database now, found a very helpful package to work with requests that include json 
