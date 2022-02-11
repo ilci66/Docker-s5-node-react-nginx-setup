@@ -5,11 +5,12 @@ import axios from 'axios';
 function Home() {
 
     const [name, setName] = useState("");
-    const [duration, setDuration] = useState(0)
+    const [duration, setDuration] = useState(0);
 
     const [allActivities, setAllActivities] = useState(undefined);
 
     const getAllActivities = () => {
+        console.log("get all the activities")
         axios.get('http://localhost:8080/get-all')
             .then(res => {
                 console.log(res.data)
@@ -17,7 +18,9 @@ function Home() {
             })
             .catch(e => console.log("error in get all ==>", e))
     };
-    useEffect(() =>{ getAllActivities() },[]);
+    useEffect(() =>{ 
+        getAllActivities() 
+    },[]);
 
     const submitActivity = (e) => {
         e.preventDefault();
@@ -33,7 +36,6 @@ function Home() {
                 alert("succesfully added")
             })
             .catch(error => console.log("error ==>", error))
-        
     }   
 
     return (<div className='center-align homepage-container'>
@@ -59,7 +61,7 @@ function Home() {
                 <input className='waves-effect waves-light btn' type="submit" value="ADD" />
             </form>
         </div>
-        {allActivities && allActivities.map((activity) => <Item activity={activity}/>)}
+        {allActivities && allActivities.map((activity) => <Item getAllActivities={getAllActivities} activity={activity}/>)}
     </div>);
 }
 

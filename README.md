@@ -2,15 +2,21 @@
 
 ## Project Description
 Parts of the project will run in different containers and will be connected via docker network. 
-Project setup will be handled in docker with the docker compose file
+Project setup will be handled in docker with the docker compose file. The first steps of this 
+project can be used to create other docker projects with symfony in the future. 
 
-### Tecnologies (To Be) Used:
+The to do list is very basic app but contains all the functionality that is necessary to utilize 
+react with symfony mysql docker and nginx. Security mesures such as protection against sql injection
+attacks and xxs attacks are not implemented in this project. Implement in an actual application
+
+### Tecnologies Used:
 *   Docker
 *   Nginx
 *   Mysql
 *   Symfony
-*   React
-*   Node
+*   React.js
+*   Node.js
+*   Materialize
 
 ### Project Motivation
 I need more practice using tools such as docker. I haven't done a project with symfony that utilizes react for frontend.
@@ -18,16 +24,20 @@ I need more practice using tools such as docker. I haven't done a project with s
 ### How To Use
 *   Clone the repository
 *   Create a "mysql" folder in the root
-*   run "docker-compose up -d --build" 
-*   inside the node-service container run "yarn install"
-*   go to "https://localhost:8080" to view index.php
-
+*   Run "docker-compose up -d --build" 
+*   Inside the node-service container run "yarn install"
+*   Go to "https://localhost:8080" to view index.php
+*   Add the necessary changes for your own project
 
 ### Notes
 Full tutorial for the setup is [here](https://www.youtube.com/watch?v=ITOnpzkzlYM&list=PLaxcKCJLJmbDOT25foBK1uvL9-XHAoE1b&index=47&t=974s)
 
-### Currently working on
-Saving data to the database now, found a very helpful package to work with requests that include json 
-I just found out that the page wasn't rendering on google chrome, I sue firefox dev edition, gonna find out why
-Instead of mapping inside a allItems component, mapping the items of the array and renderind a component for each item
-Now gotta find a clever way to delete and re-render my list
+### Personal Notes
+Testing out other frameworks is fun and symfony is a bit complicated but a powerful framework
+Figuring out the MySQL and symfony connection took longer than I wanna admit and having to run
+build command for webpack encore slow down the development a little (couldn't find any info
+on how to properly configure webpack encore to watch for changes in my .jsx files). 
+
+It was a fun project from which I learned a lot
+
+Feel free to use the files in your own personal projects :)

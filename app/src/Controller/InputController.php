@@ -21,18 +21,20 @@ class InputController extends AbstractController
         $responseArray = array();
         $activities = $doctrine->getRepository(Activity::class)->findAll();
 
-        if (!$activities) {
-            print("nothing here mate!");
-            throw $this->createNotFoundException(
-                'No activity found'
-            );
-        }
+        // if (!$activities) {
+        //     print("nothing here mate!");
+        //     throw $this->createNotFoundException(
+        //         'No activity found'
+        //     );
+        // }
         foreach ($activities as $activity) {
             array_push($responseArray, array($activity->getId(), $activity->getName(), $activity->getDuration()));
         }
         // echo $activity;
         // print($activity[0]->getName());
-
+        
+        // if (!$activities) { return new JsonResponse($responseArray);}
+        
         return new JsonResponse($responseArray);
         // $values = array(
         //     array('Workout', 60),
