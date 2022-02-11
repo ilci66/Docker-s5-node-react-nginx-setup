@@ -28,3 +28,6 @@ Full tutorial for the setup is [here](https://www.youtube.com/watch?v=ITOnpzkzlY
 
 ### Currently working on
 Saving data to the database now, found a very helpful package to work with requests that include json 
+I just found out that the page wasn't rendering on google chrome, I sue firefox dev edition, gonna find out why
+Instead of mapping inside a allItems component, mapping the items of the array and renderind a component for each item
+Now gotta find a clever way to delete and re-render my list

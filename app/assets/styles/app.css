@@ -13,7 +13,7 @@ main {
     min-height: 100vh;
 }
 footer{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     font-size: large;

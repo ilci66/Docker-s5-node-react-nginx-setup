@@ -49,53 +49,6 @@ class InputController extends AbstractController
     public function save(ManagerRegistry $doctrine, Request $request): Response
     {   
         // $request = Request::createFromGlobals();
-        
-        // // $parameters = json_decode($request->getContent(), false);
-        // // $name =  $parameters['name']; // will print 'user'
-        // // $duration = $parameters['duration'];
-        // // isset($this->$parameters);
-
-        // // print("parameters ==> " . $request->getContent());
-        
-        // // apparently I didn't need to deserialize
-        // print("This is the name to be added" . $request->request->get('name') . " <=="); // this one says they cant 
-        // print("This is the duration to be added" . $request->request->get('duration'. " <==")); // this one says they cant 
-        
-        // $a_name = $request->request->get('name'); // this one says they cant 
-        // $a_duration = $request->request->get('duration'); // this one says they cant 
-        // // $a_duration = intval($request->request->get('duration')); // this one says they cant 
-        
-        
-        // // now save them in the database
-
-        // $entityManager = $doctrine->getManager();
-        // $activity = new Activity();
-
-        // $activity->setName($a_name);
-        // $activity->setDuration($a_duration);
-
-        // $entityManager->persist($activity);   
-        // $entityManager->flush();
-
-
-        // // and finally send response 
-        // // $response = new Response();
-        // // $response->setStatusCode(Response::HTTP_OK);
-        // // // return $this->render('input/index.html.twig', [
-        // // //     'controller_name' => 'InputController',
-        // // // ]);
-        // // return $response->send();
-        // return new Response('Saved new activity with the id' . $activity->getId());
-
-        // OK NOW GETTING THE INFO NOW TO WORK WITH IT AFTER ME BREAK
-        // $data = $request->getContent();
-        // print(var_dump($data));
-        // // $data = json_decode($data, true);
-        // $data = json_decode($data);
-        // // $a_name = $data->{'name'}; // this one says they cant 
-        // // print(var_dump(($data)));
-        // // return $this->json($data);
-        // return $this->json($data)->{"name"};
 
         $name = $request->get('name');
         $duration = $request->get('duration');

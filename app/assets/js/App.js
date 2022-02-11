@@ -17,7 +17,7 @@ import Navigation from "./components/Navigation";
 import AboutProject from "./components/AboutProject";
 
 export default function App() {
-    return (
+    return ( 
         <Routes>
             <Route path="detail" element={<Detail />}></Route>
             <Route path="about" element={<AboutProject />}></Route>
