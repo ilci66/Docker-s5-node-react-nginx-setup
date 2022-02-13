@@ -16,9 +16,9 @@ const Item = ({activity,getAllActivities}) => {
     return (<>
         {/* {!allActivities[0] && <p>Loading Activities</p>} */}
         <ul className="collection">
-            <li key={activity[1]} className="collection-item">{activity[1]}, {activity[2]}  
+            <li key={activity[1]} className="collection-item">{activity[1]}, for {activity[2]} minutes  
                 <button key={activity[0]} id={activity[0]} className='waves-effect waves-light btn' onClick={(e) => removeActivity(e.target.id)}>
-                    Remove Id: {activity[0]}
+                    Remove
                 </button>
             </li>
         </ul>

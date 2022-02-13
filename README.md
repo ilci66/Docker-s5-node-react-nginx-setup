@@ -1,13 +1,22 @@
 # Symfony React Nginx Node Docker Setup
 
+![](https://imgur.com/NSidCNv)
+
 ## Project Description
-Parts of the project will run in different containers and will be connected via docker network. 
-Project setup will be handled in docker with the docker compose file. The first steps of this 
-project can be used to create other docker projects with symfony in the future. 
+Parts of the project runs in different containers and is connected via docker network. 
+Project setup is handled in docker with the docker compose file. 
+
+The skeleton of the project along with the configs is valid, so in the future other projects can be 
+swiftly implemented with couple of tweaks 
 
 The to do list is very basic app but contains all the functionality that is necessary to utilize 
-react with symfony mysql docker and nginx. Security mesures such as protection against sql injection
-attacks and xxs attacks are not implemented in this project. Implement in an actual application
+react with symfony mysql docker and nginx. Using MySQL database to keep track of the activities
+Added and removed by the user. 
+
+Security mesures such as protection against sql injection attacks and xxs attacks are not 
+implemented in this project. Consider Implementing in an actual application
+
+
 
 ### Tecnologies Used:
 *   Docker
@@ -19,7 +28,8 @@ attacks and xxs attacks are not implemented in this project. Implement in an act
 *   Materialize
 
 ### Project Motivation
-I need more practice using tools such as docker. I haven't done a project with symfony that utilizes react for frontend.
+I need more practice using tools such as docker. I haven't done a project with 
+symfony that utilizes react for frontend.
 
 ### How To Use
 *   Clone the repository
