@@ -1,6 +1,6 @@
 # Symfony React Nginx Node Docker Setup
 
-![project image](symfony-docker-todolist.png)
+![project image](project-image-s5-docker.png)
 
 ## Project Description
 Parts of the project runs in different containers and is connected via docker network. 
