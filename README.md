@@ -1,6 +1,6 @@
 # Symfony React Nginx Node Docker Setup
 
-![](https://imgur.com/NSidCNv)
+![project picture](https://imgur.com/NSidCNv)
 
 ## Project Description
 Parts of the project runs in different containers and is connected via docker network. 
